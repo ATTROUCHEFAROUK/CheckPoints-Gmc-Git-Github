@@ -1,0 +1,156 @@
+Microsoft Windows [version 10.0.19045.2965]
+(c) Microsoft Corporation. Tous droits réservés.
+
+C:\Users\HP\Desktop\GMC PLATFORME\CHAPITRE 2 GIT\CHECK POINT>cd learn_git
+
+C:\Users\HP\Desktop\GMC PLATFORME\CHAPITRE 2 GIT\CHECK POINT\learn_git>git init
+Initialized empty Git repository in C:/Users/HP/Desktop/GMC PLATFORME/CHAPITRE 2 GIT/CHECK POINT/learn_git/.git/
+
+C:\Users\HP\Desktop\GMC PLATFORME\CHAPITRE 2 GIT\CHECK POINT\learn_git>git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+C:\Users\HP\Desktop\GMC PLATFORME\CHAPITRE 2 GIT\CHECK POINT\learn_git>git add .
+
+C:\Users\HP\Desktop\GMC PLATFORME\CHAPITRE 2 GIT\CHECK POINT\learn_git>git log
+fatal: your current branch 'master' does not have any commits yet
+
+C:\Users\HP\Desktop\GMC PLATFORME\CHAPITRE 2 GIT\CHECK POINT\learn_git>git commit -m "adding third.txt"
+[master (root-commit) b547d7f] adding third.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 third.txt.txt
+
+C:\Users\HP\Desktop\GMC PLATFORME\CHAPITRE 2 GIT\CHECK POINT\learn_git>git log
+commit b547d7f49aef1db11b5eb8d165ece36b4d1dce74 (HEAD -> master)
+Author: ATTROUCHE Farouk <f_attrouche@esi.dz>
+Date:   Wed May 17 14:31:19 2023 +0200
+
+    adding third.txt
+
+C:\Users\HP\Desktop\GMC PLATFORME\CHAPITRE 2 GIT\CHECK POINT\learn_git>git add .
+
+C:\Users\HP\Desktop\GMC PLATFORME\CHAPITRE 2 GIT\CHECK POINT\learn_git>git commit -m "adding fourth.txt"
+[master a2ef155] adding fourth.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 fourth.txt.txt
+
+C:\Users\HP\Desktop\GMC PLATFORME\CHAPITRE 2 GIT\CHECK POINT\learn_git>git log
+commit a2ef155ef61578e83eae9b98d919c06c65d45690 (HEAD -> master)
+Author: ATTROUCHE Farouk <f_attrouche@esi.dz>
+Date:   Wed May 17 14:33:26 2023 +0200
+
+    adding fourth.txt
+
+commit b547d7f49aef1db11b5eb8d165ece36b4d1dce74
+Author: ATTROUCHE Farouk <f_attrouche@esi.dz>
+Date:   Wed May 17 14:31:19 2023 +0200
+
+    adding third.txt
+
+C:\Users\HP\Desktop\GMC PLATFORME\CHAPITRE 2 GIT\CHECK POINT\learn_git>git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+C:\Users\HP\Desktop\GMC PLATFORME\CHAPITRE 2 GIT\CHECK POINT\learn_git>git add .
+
+C:\Users\HP\Desktop\GMC PLATFORME\CHAPITRE 2 GIT\CHECK POINT\learn_git>git commit -m "removing third.txt"
+[master 2673ed0] removing third.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 third.txt.txt
+
+C:\Users\HP\Desktop\GMC PLATFORME\CHAPITRE 2 GIT\CHECK POINT\learn_git>git log
+commit 2673ed0d7d494619f66df2855e2c328ee6c55ab8 (HEAD -> master)
+Author: ATTROUCHE Farouk <f_attrouche@esi.dz>
+Date:   Wed May 17 14:35:04 2023 +0200
+
+    removing third.txt
+
+commit a2ef155ef61578e83eae9b98d919c06c65d45690
+Author: ATTROUCHE Farouk <f_attrouche@esi.dz>
+Date:   Wed May 17 14:33:26 2023 +0200
+
+    adding fourth.txt
+
+commit b547d7f49aef1db11b5eb8d165ece36b4d1dce74
+Author: ATTROUCHE Farouk <f_attrouche@esi.dz>
+Date:   Wed May 17 14:31:19 2023 +0200
+
+    adding third.txt
+
+C:\Users\HP\Desktop\GMC PLATFORME\CHAPITRE 2 GIT\CHECK POINT\learn_git>git config --global core.pager "cat"
+
+C:\Users\HP\Desktop\GMC PLATFORME\CHAPITRE 2 GIT\CHECK POINT\learn_git>git log
+commit 2673ed0d7d494619f66df2855e2c328ee6c55ab8 (HEAD -> master)
+Author: ATTROUCHE Farouk <f_attrouche@esi.dz>
+Date:   Wed May 17 14:35:04 2023 +0200
+
+    removing third.txt
+
+commit a2ef155ef61578e83eae9b98d919c06c65d45690
+Author: ATTROUCHE Farouk <f_attrouche@esi.dz>
+Date:   Wed May 17 14:33:26 2023 +0200
+
+    adding fourth.txt
+
+commit b547d7f49aef1db11b5eb8d165ece36b4d1dce74
+Author: ATTROUCHE Farouk <f_attrouche@esi.dz>
+Date:   Wed May 17 14:31:19 2023 +0200
+
+    adding third.txt
+
+C:\Users\HP\Desktop\GMC PLATFORME\CHAPITRE 2 GIT\CHECK POINT\learn_git>git config --global --list
+user.email=f_attrouche@esi.dz
+user.name=ATTROUCHE Farouk
+core.pager=cat
+
+C:\Users\HP\Desktop\GMC PLATFORME\CHAPITRE 2 GIT\CHECK POINT\learn_git>git config --global
+usage: git config [<options>]
+
+Config file location
+    --global              use global config file
+    --system              use system config file
+    --local               use repository config file
+    --worktree            use per-worktree config file
+    -f, --file <file>     use given config file
+    --blob <blob-id>      read config from given blob object
+
+Action
+    --get                 get value: name [value-pattern]
+    --get-all             get all values: key [value-pattern]
+    --get-regexp          get values for regexp: name-regex [value-pattern]
+    --get-urlmatch        get value specific for the URL: section[.var] URL
+    --replace-all         replace all matching variables: name value [value-pattern]
+    --add                 add a new variable: name value
+    --unset               remove a variable: name [value-pattern]
+    --unset-all           remove all matches: name [value-pattern]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    --fixed-value         use string equality when comparing values to 'value-pattern'
+    -e, --edit            open an editor
+    --get-color           find the color configured: slot [default]
+    --get-colorbool       find the color setting: slot [stdout-is-tty]
+
+Type
+    -t, --type <type>     value is given this type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --bool-or-str         value is --bool or string
+    --path                value is a path (file or directory name)
+    --expiry-date         value is an expiry date
+
+Other
+    -z, --null            terminate values with NUL byte
+    --name-only           show variable names only
+    --includes            respect include directives on lookup
+    --show-origin         show origin of config (file, standard input, blob, command line)
+    --show-scope          show scope of config (worktree, local, global, system, command)
+    --default <value>     with --get, use default value when missing entry
+
+
+C:\Users\HP\Desktop\GMC PLATFORME\CHAPITRE 2 GIT\CHECK POINT\learn_git>
